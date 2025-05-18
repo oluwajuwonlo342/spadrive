@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaDrive - For Fleet Managers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+      
+      background-color: #f8f9fa;
+    }
+    .btn-yellow {
+      background-color: #f8c947;
+      color: #000;
+      font-weight: 600;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd;
+    }
+    .hero {
+      background: url('beautiful-car-washing-service\ \(1\)\ \(1\).jpg') center center/cover no-repeat;
+      padding: 100px 0;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .benefit-icon {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+    #icon{
+      font-size: 25px;
+    }
+    .footer {
+      background-color: #212529;
+      color: #ccc;
+      padding: 20px 0;
+    }
+
+    .rounded-img {
+      border-radius: 0.75rem;
+    }
+
+    .rounded-circle-img {
+      border-radius: 50%;
+    }
+    footer {
+      background: #fff8e1;
+      padding: 2rem 0;
+    }
+    .footer-links a {
+      display: block;
+      color: #333;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+    }
+
+    .btn-rounded {
+      background-color: #f8c947;
+      border: 1px #f8c947 ;
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ 
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+    <div class="container">
+      <img src="Spadrive-07.svg" alt="Detailer washing car" class="image">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item mx-2"><a href="for-owners.html" class="nav-link">Car Owners</a></li>
+          <li class="nav-item mx-2"><a href="for-detailers.html" class="nav-link">Detailers</a></li>
+          <li class="nav-item mx-2"><a href="for-fleets.html" class="nav-link">Fleets Managers</a></li>
+          <li class="nav-item mx-2"><a href="about-us.html" class="nav-link">About</a></li>
+          <li class="nav-item mx-2"><a href="#faqs" class="nav-link">FAQs</a></li>
+          <li class="nav-item mx-2"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <button class="btn btn-yellow ms-lg-3 mt-2 mt-lg-0">Get Started</button>
+      </div>
+    </div>
+  </nav> 
+
+
+  <!-- Hero -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Elevate Your Fleet's Appearance</h1>
+      <p class="lead">Professional detailing services for your entire fleet, on-demand.</p>
+      <a href="#" class="btn btn-lg btn-light  btn-rounded">Request a Demo</a>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-5 fw-bold">Benefits of SpaDrive for Fleets</h2>
+      <div class="row g-4">
+        <div class="col-md-6 d-flex align-items-start">
+          <img src="https://placehold.co/50x50" alt="" class="me-3 benefit-icon">
+          <div>
+            <h5 class="fw-semibold">Enhance Your Brand Image</h5>
+            <p class="mb-0">A clean fleet reflects professionalism and attention to detail.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-start">
+          <img src="https://placehold.co/50x50" alt="" class="me-3 benefit-icon">
+          <div>
+            <h5 class="fw-semibold">Increase Resale Value</h5>
+            <p class="mb-0">Regular detailing helps maintain your vehicles' condition and value.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-start">
+          <img src="https://placehold.co/50x50" alt="" class="me-3 benefit-icon">
+          <div>
+            <h5 class="fw-semibold">Streamlined Scheduling</h5>
+            <p class="mb-0">Easily manage fleet detailing from one centralized platform.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-start">
+          <img src="https://placehold.co/50x50" alt="" class="me-3 benefit-icon">
+          <div>
+            <h5 class="fw-semibold">Customizable Packages</h5>
+            <p class="mb-0">Tailored detailing services to meet your fleet's unique needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Management -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Comprehensive Fleet Management</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h4 class="fw-semibold mb-3">Effortless Scheduling</h4>
+          <p>
+            Schedule detailing services for your entire fleet in just a few clicks. 
+            Manage multiple locations, set recurring appointments, and track service history.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="auto-service-salon-doign-car-wrapping (1).jpg" alt="Fleet Dashboard" class="img-fluid rounded-img shadow-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Health Gamification -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Fleet Health Challenge</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://placehold.co/600x400" alt="Gamification" class="img-fluid rounded-img shadow-sm">
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-semibold mb-3">Gamified Maintenance</h4>
+          <p>
+            Track your fleet’s cleanliness and maintenance with gamification.
+            Earn points, badges, and compete to keep your fleet in top condition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <a href="#" class="btn btn-lg btn-rounded">Request a Demo</a>
+      <p class="mt-3 text-muted">
+        or <a href="#" class="text-decoration-none text-primary fw-semibold">Talk to Sales</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-md-start">
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-md-2 mb-3">
+          
+        <img src="Spadrive-07.svg" alt="Detailer washing car" class="image">
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Company</h6>
+          <a href="#">About</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Products</h6>
+          <a href="#">Mobile App</a>
+          <a href="#">Packages</a>
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Resources</h6>
+          <a href="#">Security</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact</h6>
+          <p><i class="bi bi-telephone"></i> <a href="tel:+234 808 574 7342" style="text-decoration: none; color: #000;">+234 808 574 7342</a></p>
+          <p><i class="bi bi-envelope"></i> <a href="mailto:info@spadriveapp.com" style="text-decoration: none; color: #000;">info@spadriveapp.com</a></p>
+          <div>
+            <a href="#"><i class="bi bi-facebook mx-1" style="color: #000;" id="icon"></i></a>
+            <a href="#"><i class="bi bi-twitter mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-instagram mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-whatsapp mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-linkedin mx-1" style="color: #000;"  id="icon"></i></a>
+      <div>&copy; 2025 Spadrive – All rights reserved</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Car Owners - SpaDrive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      
+    }
+
+    .hero {
+      background-image: url('beautiful-car-washing-service\ \(2\).jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+    .btn-yellow {
+      background-color: #f8c947;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+    }
+
+    .faq .accordion-button:focus {
+      box-shadow: none;
+    }
+    #icon{
+      font-size: 25px;
+    }
+    footer {
+      background: #fff8e1;
+      padding: 2rem 0;
+    }
+    .footer-links a {
+      display: block;
+      color: #333;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+    <div class="container">
+      <img src="Spadrive-07.svg" alt="Detailer washing car" class="image">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item mx-2"><a href="for-owners.html" class="nav-link">Car Owners</a></li>
+          <li class="nav-item mx-2"><a href="for-detailers.html" class="nav-link">Detailers</a></li>
+          <li class="nav-item mx-2"><a href="for-fleets.html" class="nav-link">Fleets Managers</a></li>
+          <li class="nav-item mx-2"><a href="about-us.html" class="nav-link">About</a></li>
+          <li class="nav-item mx-2"><a href="#faqs" class="nav-link">FAQs</a></li>
+          <li class="nav-item mx-2"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <button class="btn btn-yellow ms-lg-3 mt-2 mt-lg-0">Get Started</button>
+      </div>
+    </div>
+  </nav> 
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">Effortless Car Detailing for Busy Owners</h1>
+      <p class="lead mb-4">Premium on-location service. Maximum convenience.</p>
+      <a class="btn btn-yellow  btn-light btn-lg rounded-pill" href="#">Get Early Access</a>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="container text-center py-5">
+    <h2 class="section-title fw-semibold">Perfect for...</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5>Busy Professionals</h5>
+        <p>We clean your car while you're working or relaxing.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Luxury Car Owners</h5>
+        <p>Expert care for vehicles that deserve the best.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Families On-the-Go</h5>
+        <p>Skip the car wash trip — we come to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Flow Screenshots -->
+  <section class="container py-5">
+    <h2 class="section-title fw-semibold text-center">Booking is Easy</h2>
+    <div class="row text-center justify-content-center">
+      <div class="col-md-6 col-lg-5 mb-4">
+        <img src="https://via.placeholder.com/300x500" class="img-fluid rounded shadow" alt="App screenshot 1">
+      </div>
+      <div class="col-md-6 col-lg-5 mb-4">
+        <img src="https://via.placeholder.com/300x500" class="img-fluid rounded shadow" alt="App screenshot 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="container faq py-5">
+    <h2 class="section-title fw-semibold text-center">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            How much does it cost?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Prices vary by service and location. Transparent pricing is shown during booking.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Where is this available?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Currently available in select cities — we're expanding quickly!</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Is it safe?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely! All detailers are vetted, background-checked, and professionally trained.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta text-center py-5 bg-light">
+    <h3 class="mb-3">Ready for a Cleaner Car?</h3>
+    <a href="#" class="btn btn-yellow btn-yellow btn-lg rounded-pill">Get Early Access</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-md-start">
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-md-2 mb-3">
+          
+        <img src="Spadrive-07.svg" alt="Detailer washing car" class="image">
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Company</h6>
+          <a href="#">About</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Products</h6>
+          <a href="#">Mobile App</a>
+          <a href="#">Packages</a>
+        </div>
+        <div class="col-md-2 footer-links">
+          <h6>Resources</h6>
+          <a href="#">Security</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact</h6>
+          <p><i class="bi bi-telephone"></i> <a href="tel:+234 808 574 7342" style="text-decoration: none; color: #000;">+234 808 574 7342</a></p>
+          <p><i class="bi bi-envelope"></i> <a href="mailto:info@spadriveapp.com" style="text-decoration: none; color: #000;">info@spadriveapp.com</a></p>
+          <div>
+            <a href="#"><i class="bi bi-facebook mx-1" style="color: #000;" id="icon"></i></a>
+            <a href="#"><i class="bi bi-twitter mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-instagram mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-whatsapp mx-1" style="color: #000;"  id="icon"></i></a>
+            <a href="#"><i class="bi bi-linkedin mx-1" style="color: #000;"  id="icon"></i></a>
+      <div>&copy; 2025 Spadrive – All rights reserved</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
