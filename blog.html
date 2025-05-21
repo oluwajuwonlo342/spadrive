@@ -3,55 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpaDrive - Contact Us</title>
+  <title>Blog - SpaDrive</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-  <!-- Google Fonts -->
-  
-
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
   <style>
-    
     body {
-        font-family: 'Segoe UI', sans-serif;
-    
-      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 1rem;
+      position: relative;
     }
     .btn-yellow {
       background-color: #f8c947;
       color: #000;
       font-weight: 600;
     }
-    .navbar-brand {
-      font-weight: 600;
-      color: #0d6efd;
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
     }
 
-    .navbar-nav .nav-link {
-      color: #495057;
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
     }
 
-    .navbar-nav .nav-link:hover {
-      color: #0d6efd;
+    .card img {
+      height: 200px;
+      object-fit: cover;
     }
 
-    .btn-primary {
-      border-radius: 50px;
-      padding: 0.6rem 1.5rem;
-    }
-
-    .form-control:focus {
-      box-shadow: none;
-      border-color: #0d6efd;
-    }
-    #icon{
-      font-size: 25px;
+    footer {
+      margin-top: 4rem;
     }
     footer {
       background: #fff8e1;
       padding: 2rem 0;
+    }
+    #icon{
+      font-size: 25px;
     }
     .footer-links a {
       display: block;
@@ -64,25 +67,12 @@
       .image{
         width: 25vw;
       }
-      #img13{
-        width: 240px;
-      }
-      .blue-box{
-        margin-top: 5%;
-      }
-      #img2{
-        margin-top: 7%;
-      }
-      #img3{
-        width: 350px; height: 400px; border-radius: 10px;
-      }
-  
-      }
+    }
   </style>
 </head>
-
 <body>
-  <!-- Header -->
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
     <div class="container">
       <img src="Spadrive-07.svg" alt="Detailer washing car" class="image">
@@ -105,64 +95,54 @@
     </div>
   </nav> 
 
-  <!-- Contact Form Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center fw-semibold mb-5">Contact Us</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
-            </div>
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center">
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">SpaDrive Blog</h1>
+      <p class="lead">Tips, stories, and updates for car lovers and busy drivers.</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <!-- Blog Post 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="contemplative-dark-skinned-young-man-holds-chin-looks-thoughtfully-upwards-dreams-about-something-thinks-about-future (1).jpg" class="card-img-top" alt="Blog post image">
+          <div class="card-body">
+            <h5 class="card-title">5 Reasons to Get Mobile Car Detailing</h5>
+            <p class="card-text">Discover how mobile detailing can save you time and extend your car’s life.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Post 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="auto-service-salon-doign-car-wrapping (1).jpg" class="card-img-top" alt="Blog post image">
+          <div class="card-body">
+            <h5 class="card-title">How to Protect Your Paint in Any Season</h5>
+            <p class="card-text">A clean car is a happy car — but protecting your paint takes more than just a wash.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Post 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="bipoc-specialist-car-service-using-professional-mechanical-tool-repair-broken-ignition-system-licensed-specialist-garage-fixing-client-automobile-ensuring-optimal-automotive-performance (1).jpg" class="card-img-top" alt="Blog post image">
+          <div class="card-body">
+            <h5 class="card-title">Inside SpaDrive: How Our Service Works</h5>
+            <p class="card-text">Take a peek behind the scenes and see what makes SpaDrive so seamless.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Info Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center fw-semibold mb-5">Get in Touch</h2>
-      <div class="row text-center">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <h5 class="text-primary fw-semibold">Email</h5>
-          <p class="text-muted">
-            
-          <p><i class="bi bi-envelope"></i> <a href="mailto:info@spadriveapp.com" style="text-decoration: none; color: #000;">info@spadriveapp.com</a></p>
-            
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h5 class="text-primary fw-semibold">Phone</h5>
-          <p><i class="bi bi-telephone"></i> <a href="tel:+234 808 574 7342" style="text-decoration: none; color: #000;">+234 808 574 7342</a></p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <!-- <footer class="py-4 text-center">
-    <div class="container">
-      <p class="mb-0">© 2024 SpaDrive. All rights reserved.</p>
-    </div>
-  </footer> -->
   <footer class="text-center text-md-start">
     <div class="container" id="contact">
       <div class="row">
@@ -205,7 +185,6 @@
     </div>
   </footer> 
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
